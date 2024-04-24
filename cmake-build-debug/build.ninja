@@ -49,11 +49,11 @@ cmake_ninja_workdir = C$:/Users/jesus/CLionProjects/Problems-Git/cmake-build-deb
 
 build cmake_object_order_depends_target_Problems_Git: phony || CMakeFiles/Problems_Git.dir
 
-build CMakeFiles/Problems_Git.dir/Roman_Numbers.cpp.obj: CXX_COMPILER__Problems_Git_unscanned_Debug C$:/Users/jesus/CLionProjects/Problems-Git/Roman_Numbers.cpp || cmake_object_order_depends_target_Problems_Git
-  DEP_FILE = CMakeFiles\Problems_Git.dir\Roman_Numbers.cpp.obj.d
+build CMakeFiles/Problems_Git.dir/CodeWars/Roman_Numbers.cpp.obj: CXX_COMPILER__Problems_Git_unscanned_Debug C$:/Users/jesus/CLionProjects/Problems-Git/CodeWars/Roman_Numbers.cpp || cmake_object_order_depends_target_Problems_Git
+  DEP_FILE = CMakeFiles\Problems_Git.dir\CodeWars\Roman_Numbers.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Problems_Git.dir
-  OBJECT_FILE_DIR = CMakeFiles\Problems_Git.dir
+  OBJECT_FILE_DIR = CMakeFiles\Problems_Git.dir\CodeWars
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/Problems_Git.dir/Roman_Numbers.cpp.obj: CXX_COMPILER__Problems_
 #############################################
 # Link the executable Problems_Git.exe
 
-build Problems_Git.exe: CXX_EXECUTABLE_LINKER__Problems_Git_Debug CMakeFiles/Problems_Git.dir/Roman_Numbers.cpp.obj
+build Problems_Git.exe: CXX_EXECUTABLE_LINKER__Problems_Git_Debug CMakeFiles/Problems_Git.dir/CodeWars/Roman_Numbers.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Problems_Git.dir
