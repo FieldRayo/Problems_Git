@@ -1,79 +1,20 @@
 #include <iostream>
 #include <string>
-
-using namespace std;
+#include <map>
 
 int main() {
-    int number = 3849;
-    std::string result = "";
-    while (number>0){
-        if (number >= 1000){
-            number -= 1000;
-            result += "M";
-        }
-        else if (number >= 500){
-            if(900 > number){
-                number -= 500;
-                result += "D";
-            }
-            else{
-                number -= 900;
-                result += "CM";
-            }
-        }
-        else if (number >= 100){
-            if(400 > number){
-                number -= 100;
-                result += "C";
-            }
-            else{
-                number -= 400;
-                result += "CD";
-            }
-        }
-        else if (number >= 50){
-            if(90 > number){
-                number -= 50;
-                result += "L";
-            }
-            else{
-                number -= 90;
-                result += "XC";
-            }
-        }
-        else if (number >= 10){
-            if(40 > number){
-                number -= 10;
-                result += "X";
-            }
-            else{
-                number -= 40;
-                result += "XL";
-            }
-        }
-        else if (number >= 5){
-            if(9 > number){
-                number -= 5;
-                result += "V";
-            }
-            else{
-                number -= 9;
-                result += "IX";
-            }
-        }
-        else if (number >= 1){
-            if(4 > number){
-                number -= 1;
-                result += "I";
-            }
-            else{
-                number -= 4;
-                result += "IV";
-            }
-        }
+    int number = 21938;
+    std::string result("");
+    std::map<int, std::string> roman_map = {{1000, "M"}, {900, "CM"}, {500, "D"}, {400, "CD"}, {100, "C"}, {90, "XC"}, {50, "L"}, {40, "XL"}, {10, "X"}, {9, "IX"}, {5, "V"}, {4, "IV"}, {1, "I"}};
+    for (auto it = roman_map.crbegin(); it != roman_map.crend(); ) {
+        std::cout << it->first << " - " << it->second << std::endl;
 
-        std::cout << result << " - " << number << endl;
+        if (number >= it->first) {
+            number -= it->first;
+            result += it->second;
+        } else {
+            it++;
+        }
     }
-
     std::cout << result;
 }

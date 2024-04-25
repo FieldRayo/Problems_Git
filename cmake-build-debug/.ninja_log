@@ -1,4 +1,8 @@
 # ninja log v5
-2	184	7356234375077799	build.ninja	1d251e0a55d8b445
+2	184	7357631758891620	build.ninja	1d251e0a55d8b445
 1	396	7355559509249022	CMakeFiles/Problems_Git.dir/Roman_Numbers.cpp.obj	f16b0ad73425431e
-402	508	7355559510324485	Problems_Git.exe	f2c06838d7268ea1
+477	599	7357631595185289	Problems_Git.exe	66600f58d32abe48
+3	477	7357631593996862	CMakeFiles/Problems_Git.dir/CodeWars/Roman_Numbers.cpp.obj	ce7fe44ceaf25e0a
+3	405	7357631677012138	CMakeFiles/Problems_Git.dir/CETI/Programación-2/main.cpp.obj	a0113d0b5359bdfa
+10	416	7357631807142041	CMakeFiles/Problems_Git.dir/CETI/Programación-2/main.cpp.obj	a0113d0b5359bdfa
+4	542	7357631808331593	CMakeFiles/Problems_Git.dir/CETI/Programación-2/Mate.cpp.obj	8f0a39ba0da4840d

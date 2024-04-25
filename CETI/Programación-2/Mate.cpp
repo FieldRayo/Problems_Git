@@ -172,4 +172,18 @@ void Mate::DesplegarDatos(int n_datos, int *max, int *min, int *sum) {
 
         fflush(stdin);
     }
+
+}
+
+int Mate::CalcularPromedio() {
+    int dato, suma=0, i=0;
+    while(dato){
+        printf("Ingrese un numero: ");
+        fflush(stdout);
+        scanf("%d", &dato);
+        suma += dato;
+        i++;
+    }
+
+    return (dato/i);
 }

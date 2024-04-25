@@ -271,7 +271,7 @@ int main(int argc, char** argv) {
     printf("%d", contador);
 
     */
-
+/*
 // Despliegue de datos
     int n_datos, max=0, min=0, sum=0;
 
@@ -282,5 +282,10 @@ int main(int argc, char** argv) {
     mat.DesplegarDatos(n_datos, &max, &min, &sum);
 
     printf("El maximo es %d, el minimo es %d, la suma es %d y el promedio es %f", max, min, sum, (float)sum/n_datos);
+ */
+
+    int promedio;
+    promedio = mat.CalcularPromedio();
+    printf("El promedio es de: %d", promedio);
  }
 

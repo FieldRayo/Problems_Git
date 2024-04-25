@@ -25,6 +25,7 @@ public:
     void EvenOrOdd();
     int ContadorCifras(int n);
     void DesplegarDatos(int n_datos, int *max, int *min, int *sum);
+    int CalcularPromedio();
 };
 
 

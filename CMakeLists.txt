@@ -3,4 +3,6 @@ project(Problems_Git)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Problems_Git CodeWars/Roman_Numbers.cpp)
+add_executable(Problems_Git CodeWars/Roman_Numbers.cpp
+        CETI/Programación-2/main.cpp
+        CETI/Programación-2/Mate.cpp)

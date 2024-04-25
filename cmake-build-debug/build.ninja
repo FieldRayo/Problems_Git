@@ -55,6 +55,18 @@ build CMakeFiles/Problems_Git.dir/CodeWars/Roman_Numbers.cpp.obj: CXX_COMPILER__
   OBJECT_DIR = CMakeFiles\Problems_Git.dir
   OBJECT_FILE_DIR = CMakeFiles\Problems_Git.dir\CodeWars
 
+build CMakeFiles/Problems_Git.dir/CETI/Programación-2/main.cpp.obj: CXX_COMPILER__Problems_Git_unscanned_Debug C$:/Users/jesus/CLionProjects/Problems-Git/CETI/Programación-2/main.cpp || cmake_object_order_depends_target_Problems_Git
+  DEP_FILE = CMakeFiles\Problems_Git.dir\CETI\Programación-2\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Problems_Git.dir
+  OBJECT_FILE_DIR = CMakeFiles\Problems_Git.dir\CETI\Programación-2
+
+build CMakeFiles/Problems_Git.dir/CETI/Programación-2/Mate.cpp.obj: CXX_COMPILER__Problems_Git_unscanned_Debug C$:/Users/jesus/CLionProjects/Problems-Git/CETI/Programación-2/Mate.cpp || cmake_object_order_depends_target_Problems_Git
+  DEP_FILE = CMakeFiles\Problems_Git.dir\CETI\Programación-2\Mate.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Problems_Git.dir
+  OBJECT_FILE_DIR = CMakeFiles\Problems_Git.dir\CETI\Programación-2
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Problems_Git
@@ -63,7 +75,7 @@ build CMakeFiles/Problems_Git.dir/CodeWars/Roman_Numbers.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable Problems_Git.exe
 
-build Problems_Git.exe: CXX_EXECUTABLE_LINKER__Problems_Git_Debug CMakeFiles/Problems_Git.dir/CodeWars/Roman_Numbers.cpp.obj
+build Problems_Git.exe: CXX_EXECUTABLE_LINKER__Problems_Git_Debug CMakeFiles/Problems_Git.dir/CodeWars/Roman_Numbers.cpp.obj CMakeFiles/Problems_Git.dir/CETI/Programación-2/main.cpp.obj CMakeFiles/Problems_Git.dir/CETI/Programación-2/Mate.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Problems_Git.dir
