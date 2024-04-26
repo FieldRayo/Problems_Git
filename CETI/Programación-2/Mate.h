@@ -26,6 +26,7 @@ public:
     int ContadorCifras(int n);
     void DesplegarDatos(int n_datos, int *max, int *min, int *sum);
     float CalcularPromedio();
+    void TresRangos();
 };
 
 

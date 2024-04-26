@@ -187,3 +187,21 @@ int Mate::CalcularPromedio() {
 
     return (dato/i);
 }
+void Mate::TresRangos() {
+    int dato, a=0, b=0, c=0;
+
+    for(int i=0; i<30; i++){
+        printf("Ingrese un digito: ");
+        fflush(stdout);
+        scanf("%d", &dato);
+
+        if(dato < 15)
+            a++;
+        if(dato >= 25 && dato <= 45)
+            b++;
+        if(dato > 50)
+            c++;
+    }
+
+    printf("La cantidad de numeros menores a 15: %d, entre 25 y 45: %d, mayores a 50: %d", a, b, c);
+}
