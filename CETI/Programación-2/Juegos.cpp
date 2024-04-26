@@ -66,10 +66,14 @@ void Juegos::adivinaNumero() {
 }
 
 void Juegos::Boliche() {
-    int puntos=0, pinos_d=0, pinos=10;
+    int puntos=0, pinos_d=0;
     int strike_bonus=0, spare_bonus=0;
 
     for(int i=0; i<10; i++){
+        int pinos=10;
+
+        printf("Ronda %d:\n", i+1);
+
         printf("1 Lanzamiento - Ingrese la cantidad de pinos derribados:");
         fflush(stdout);
         scanf("%d", &pinos_d);
@@ -78,6 +82,7 @@ void Juegos::Boliche() {
 
         if (spare_bonus){
             puntos += 10-pinos + spare_bonus;
+            printf("pinos: %d, spare: %d, puntos: %d\n", pinos, spare_bonus, puntos);
         }
 
         if (pinos > 0){
@@ -90,14 +95,14 @@ void Juegos::Boliche() {
         else{
             // Strike
             strike_bonus += 10;
-            pinos=10;
+            printf("Strike!\n\n");
             continue;
         }
 
         if (!pinos){
             // Spare
             spare_bonus += 10;
-            pinos=10;
+            printf("Spare!\n\n");
             continue;
         }
 
@@ -107,7 +112,6 @@ void Juegos::Boliche() {
 
         puntos += 10-pinos;
 
-        pinos=10;
         strike_bonus=0;
         spare_bonus=0;
         printf("Puntos: %d\n\n", puntos);
