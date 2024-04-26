@@ -284,7 +284,7 @@ int main(int argc, char** argv) {
     printf("El maximo es %d, el minimo es %d, la suma es %d y el promedio es %f", max, min, sum, (float)sum/n_datos);
  */
 
-    int promedio;
+    float promedio;
     promedio = mat.CalcularPromedio();
     printf("El promedio es de: %d", promedio);
  }

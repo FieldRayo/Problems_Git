@@ -64,3 +64,54 @@ void Juegos::adivinaNumero() {
         fflush(stdin);
     }
 }
+
+void Juegos::Boliche() {
+    int puntos=0, pinos_d=0, pinos=10;
+    int strike_bonus=0, spare_bonus=0;
+
+    for(int i=0; i<10; i++){
+        printf("1 Lanzamiento - Ingrese la cantidad de pinos derribados:");
+        fflush(stdout);
+        scanf("%d", &pinos_d);
+
+        pinos -= pinos_d;
+
+        if (spare_bonus){
+            puntos += 10-pinos + spare_bonus;
+        }
+
+        if (pinos > 0){
+            printf("2 Lanzamiento - Ingrese la cantidad de pinos derribados:");
+            fflush(stdout);
+            scanf("%d", &pinos_d);
+
+            pinos -= pinos_d;
+        }
+        else{
+            // Strike
+            strike_bonus += 10;
+            pinos=10;
+            continue;
+        }
+
+        if (!pinos){
+            // Spare
+            spare_bonus += 10;
+            pinos=10;
+            continue;
+        }
+
+        if (strike_bonus){
+            puntos += 10-pinos + strike_bonus;
+        }
+
+        puntos += 10-pinos;
+
+        pinos=10;
+        strike_bonus=0;
+        spare_bonus=0;
+        printf("Puntos: %d\n\n", puntos);
+    }
+
+    printf("La cantidad de puntos es: %d", puntos);
+}

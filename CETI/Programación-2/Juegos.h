@@ -9,6 +9,7 @@
 class Juegos {
 public:
     void adivinaNumero();
+    void Boliche();
 };
 
 
