@@ -6,6 +6,7 @@
 #include "Mate.h"
 #include "Caracteres.h"
 #include "Juegos.h"
+#include "Negocios.h"
 
 using namespace std;
 int main(int argc, char** argv) {
@@ -14,6 +15,7 @@ int main(int argc, char** argv) {
     Mate mat;
     Caracteres car;
     Juegos j;
+    Negocios neg;
 /*
  *  Convs, Areas
  *
@@ -282,10 +284,46 @@ int main(int argc, char** argv) {
     mat.DesplegarDatos(n_datos, &max, &min, &sum);
 
     printf("El maximo es %d, el minimo es %d, la suma es %d y el promedio es %f", max, min, sum, (float)sum/n_datos);
- */
+    */
 
+/*
+ // Calcular Promedio
     float promedio;
-    promedio = mat.CalcularPromedio();
-    printf("El promedio es de: %d", promedio);
- }
+    mat.CalcularPromedio(&promedio);
+    printf("El promedio es: %f", promedio);
+    */
+/*
+// Tres Rangos
+    mat.TresRangos();
+    */
+
+
+/*
+// Boliche
+    mat.Boliche();
+    */
+
+// ImporteVenta
+    int n_prod, n_venta;
+    float importe_total, importe_por_semana=0;
+
+    // Aqui no le entendi al profe ya que puso que coloquemos lo vendido de la semana pasada, asi que le puse como yo le entendi, asi que puedes modificarlo a tu gusto
+    for (int i=0; i<7; i++) {
+        printf("Ingrese el numero del producto:");
+        fflush(stdout);
+        scanf("%d", &n_prod);
+
+        printf("Ingrese La cantidad vendida:");
+        fflush(stdout);
+        scanf("%d", &n_venta);
+
+        importe_total = neg.ImportesVenta(n_prod, n_venta);
+        importe_por_semana += importe_total;
+
+        printf("\nLa cantidad vendida hoy es de: $%f\n\n", importe_total);
+        fflush(stdin);
+    }
+
+    printf("\bLa cantidad vendida por semana es de: $%f\n", importe_por_semana);
+}
 
