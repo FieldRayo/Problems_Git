@@ -1,3 +1,0 @@
-C:/Users/jesus/CLionProjects/Problems-Git/cmake-build-debug/CMakeFiles/Problems_Git.dir
-C:/Users/jesus/CLionProjects/Problems-Git/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/jesus/CLionProjects/Problems-Git/cmake-build-debug/CMakeFiles/rebuild_cache.dir
