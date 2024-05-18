@@ -24,6 +24,14 @@ void Cadenas::Vocales(char cad[], int *count){
   // Al valor del contador es igual al valor del contador mas el resultado de la funcion 'is_vowel' 0 o 1 (falso o verdadero)
   // Se le suma uno a la direccion de c, esto hace que avanse una posicion en cadena;
   for(char *c=cad; *c != '\n'; *count = *count + is_vowel(*c), c++);
+
+  // Codigo para mortales:
+  /*
+  for (int i=0; cad[i] != '\n'; i++){
+    int c = cad[i];
+    if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
+      *contador = *contador + 1;
+  }
 }
 
 
