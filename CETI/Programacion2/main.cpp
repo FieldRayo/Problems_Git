@@ -370,6 +370,7 @@ int main(int argc, char** argv) {
     pk.Desplegar();
 */
 
+/*
     // Only Upper
     char cad[100];
     
@@ -379,5 +380,16 @@ int main(int argc, char** argv) {
     cads.CadToAltas(cad);
     cads.ImprimirCadena(cad);
     return 0;
- }
+ */
+
+    // Vocales
+    char cad[100];
+    int count=0;
+
+    printf("Ingrese una cadena: ");
+    fgets(cad, 100, stdin);
+
+    cads.Vocales(cad, &count);
+    printf("la cantidad de vocales es: %d", count);
+}
 
