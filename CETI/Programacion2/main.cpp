@@ -367,7 +367,7 @@ int main(int argc, char** argv) {
 /*
     // Barajear
     pk.Barajear();
-    pk.Desplegar();
+    pk.NuevaMano();
 */
 
 /*
@@ -382,6 +382,7 @@ int main(int argc, char** argv) {
     return 0;
  */
 
+/*
     // Vocales
     char cad[100];
     int count=0;
@@ -391,5 +392,9 @@ int main(int argc, char** argv) {
 
     cads.Vocales(cad, &count);
     printf("la cantidad de vocales es: %d", count);
+*/
+    // Factores
+    int n=28;
+    an.FactoresArr(n);
 }
 

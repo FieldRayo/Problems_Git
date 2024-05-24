@@ -32,3 +32,22 @@ void ArreglosNumericos::TresMayor(int *n1, int *n2, int *n3) {
             *n3 = n;
     }
 }
+
+void ArreglosNumericos::FactoresArr(int n){
+    int factores[n/2];
+    int indice=0;
+    for(int i=1; i<= n/2; i++){
+        if (n % i == 0)
+            factores[indice++] = i;
+    }
+    
+    factores[indice++] = n;
+
+    DesplegarFactores(factores, n);
+}
+
+void ArreglosNumericos::DesplegarFactores(int factores[], int n){
+    for(int i=0; factores[i] <= n; i++){
+        printf("%d\t", factores[i]);
+    }
+}

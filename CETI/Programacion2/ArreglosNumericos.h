@@ -14,6 +14,8 @@ public:
     void PedirDatos();
     void MostrarDatos();
     void TresMayor(int *n1, int *n2, int *n3);
+    void FactoresArr(int n);
+    void DesplegarFactores(int factores[], int n);
 };
 
 
