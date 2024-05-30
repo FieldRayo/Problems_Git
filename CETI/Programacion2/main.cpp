@@ -404,9 +404,9 @@ int main(int argc, char** argv) {
     pk.Barajear();
     pk.NuevaMano(mano);
     if (pk.Par(mano)){
-        printf("Hay dos cartas iguales\n");
+        printf("Hay un par\n");
     }else{
-        printf("No hay cartas iguales\n");
+        printf("No hay ningun par\n");
     }
 }
 

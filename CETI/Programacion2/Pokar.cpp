@@ -97,7 +97,8 @@ void Pokar::NuevaMano(int mano[]){
 
 bool Pokar::Par(int arr[]){
   int cartas_iguales=0;
-
+  
+  // Recorrer el arreglo y comprueba si hay un valor que se repita, si ese es el caso
   for(int i=0; i<5; i++){
     printf("%d\n", arr[i]);
     for(int j=i+1; j<5; j++){
@@ -105,7 +106,8 @@ bool Pokar::Par(int arr[]){
         cartas_iguales++;
     }
   }
-
+  
+  // Solamente si hay 1 solo par regresa verdadero
   if (cartas_iguales == 1)
     return true;
 
