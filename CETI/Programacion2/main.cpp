@@ -393,8 +393,20 @@ int main(int argc, char** argv) {
     cads.Vocales(cad, &count);
     printf("la cantidad de vocales es: %d", count);
 */
+
+/*
     // Factores
     int n=28;
     an.FactoresArr(n);
+*/
+    // Par
+    int mano[5];
+    pk.Barajear();
+    pk.NuevaMano(mano);
+    if (pk.Par(mano)){
+        printf("Hay dos cartas iguales\n");
+    }else{
+        printf("No hay cartas iguales\n");
+    }
 }
 

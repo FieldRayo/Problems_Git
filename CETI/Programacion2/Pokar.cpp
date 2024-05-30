@@ -90,14 +90,25 @@ int Pokar::Valor(int carta){
   return carta % 13;
 }
 
-void Pokar::NuevaMano(){
-  int carta;
-  for(int i=0; i<5; i++){
-    DesplegarValor(Valor(mazo[i]));
-    printf(" de ");
-    DesplegarPalo(Palo(mazo[i]));
-    printf("\n");
-  }
+void Pokar::NuevaMano(int mano[]){
+  for(int i=0; i<5; i++)
+    mano[i] = Valor(mazo[i]);
 }
 
+bool Pokar::Par(int arr[]){
+  int cartas_iguales=0;
+
+  for(int i=0; i<5; i++){
+    printf("%d\n", arr[i]);
+    for(int j=i+1; j<5; j++){
+      if (arr[j] == arr[i])
+        cartas_iguales++;
+    }
+  }
+
+  if (cartas_iguales == 1)
+    return true;
+
+  return false;
+}
 
